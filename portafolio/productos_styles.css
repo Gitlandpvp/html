@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1d1d1f;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #1d1d1f;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0071e3;
+}
+
+.productos-destacados {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.productos-destacados h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #1d1d1f;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0 10px;
+    color: #1d1d1f;
+}
+
+.producto p {
+    font-size: 14px;
+    color: #6e6e73;
+    margin: 0 0 15px;
+}
+
+.producto .precio {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 10px 0;
+}
+
+.producto button {
+    background-color: #0071e3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #005bb5;
+}
+
+footer {
+    background-color: #f5f5f7;
+    color: #6e6e73;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
